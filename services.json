@@ -1,16 +1,76 @@
 {
   "services": [
-    { "id": 1, "title": "Digital Strategy Development", "price": 1500 },
-    { "id": 2, "title": "Search Engine Optimization (SEO)", "price": 1200 },
-    { "id": 3, "title": "Pay-Per-Click Advertising (PPC)", "price": 1000 },
-    { "id": 4, "title": "Social Media Marketing", "price": 900 },
-    { "id": 5, "title": "Content Marketing", "price": 800 },
-    { "id": 6, "title": "Email Marketing", "price": 700 },
-    { "id": 7, "title": "Conversion Rate Optimization (CRO)", "price": 1100 },
-    { "id": 8, "title": "Brand Development", "price": 1300 },
-    { "id": 9, "title": "Web Design & Development", "price": 2000 },
-    { "id": 10, "title": "Analytics & Reporting", "price": 600 },
-    { "id": 11, "title": "Influencer Marketing", "price": 950 },
-    { "id": 12, "title": "Online Reputation Management", "price": 850 }
+    {
+      "id": 1,
+      "title": "Digital Strategy Development",
+      "price": 1500,
+      "description": "Custom digital strategies built around your business goals, target audience, and measurable growth objectives."
+    },
+    {
+      "id": 2,
+      "title": "Search Engine Optimization (SEO)",
+      "price": 1200,
+      "description": "Optimizing your website and content to improve search rankings, increase visibility, and drive organic traffic."
+    },
+    {
+      "id": 3,
+      "title": "Pay-Per-Click Advertising (PPC)",
+      "price": 1000,
+      "description": "Managing paid advertising campaigns that maximize return on investment through precise targeting and optimization."
+    },
+    {
+      "id": 4,
+      "title": "Social Media Marketing",
+      "price": 900,
+      "description": "Building brand awareness and engagement through strategic content and campaigns across social platforms."
+    },
+    {
+      "id": 5,
+      "title": "Content Marketing",
+      "price": 800,
+      "description": "Creating high-quality content that attracts, educates, and converts your target audience."
+    },
+    {
+      "id": 6,
+      "title": "Email Marketing",
+      "price": 700,
+      "description": "Designing and executing email campaigns that nurture leads and strengthen customer relationships."
+    },
+    {
+      "id": 7,
+      "title": "Conversion Rate Optimization (CRO)",
+      "price": 1100,
+      "description": "Improving website performance by analyzing user behavior and increasing conversion efficiency."
+    },
+    {
+      "id": 8,
+      "title": "Brand Development",
+      "price": 1300,
+      "description": "Defining and refining your brand identity to ensure consistency, recognition, and market impact."
+    },
+    {
+      "id": 9,
+      "title": "Web Design & Development",
+      "price": 2000,
+      "description": "Designing and developing responsive, user-focused websites aligned with your brand and business goals."
+    },
+    {
+      "id": 10,
+      "title": "Analytics & Reporting",
+      "price": 600,
+      "description": "Tracking performance data and delivering actionable insights to guide smarter marketing decisions."
+    },
+    {
+      "id": 11,
+      "title": "Influencer Marketing",
+      "price": 950,
+      "description": "Partnering with relevant influencers to expand reach, credibility, and audience engagement."
+    },
+    {
+      "id": 12,
+      "title": "Online Reputation Management",
+      "price": 850,
+      "description": "Monitoring and improving your brand’s online presence to maintain trust and credibility."
+    }
   ]
 }
