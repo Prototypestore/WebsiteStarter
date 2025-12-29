@@ -1,6 +1,12 @@
 /* ===============================
-   RESET + BASE
+   VARIABLES + RESET
 ================================ */
+:root {
+  --blue: #1e5bff;
+  --black: #0a0a0a;
+  --gray: #6b7280;
+  --light: #f4f6fb;
+}
 
 * {
   margin: 0;
@@ -9,85 +15,110 @@
 }
 
 body {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  line-height: 1.6;
-  color: #0a0a0a;
+  font-family: 'Inter', 'Poppins', system-ui, sans-serif;
   background: #ffffff;
+  color: var(--black);
 }
 
 /* ===============================
    HEADER / NAV
 ================================ */
-
-header nav {
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 1.5rem 6%;
 }
 
-header nav ul {
-  list-style: none;
-  display: flex;
-  gap: 2rem;
+.head img {
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
-header nav a {
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 2.5rem;
+}
+
+nav a {
   text-decoration: none;
-  color: #0a0a0a;
+  color: var(--black);
   font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.nav-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--blue);
+  border: 1px solid transparent;
+  border-radius: 35px;
+  width: 95px;
+  height: 45px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: 0.2s ease;
 }
 
 /* ===============================
    PORTFOLIO SECTION
 ================================ */
-
 #portfolio {
   max-width: 1100px;
   margin: 4rem auto;
   padding: 0 6%;
 }
 
-/* Portfolio intro */
 #portfolio > header {
   text-align: center;
   margin-bottom: 4rem;
 }
 
 #portfolio > header h1 {
-  font-size: 2.3rem;
+  font-size: 3.1rem;
   font-weight: 700;
+  letter-spacing: -0.03em;
   margin-bottom: 1rem;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #portfolio > header p {
-  max-width: 720px;
+  color: var(--gray);
+  font-size: 1.05rem;
+  max-width: 500px;
   margin: 0 auto;
-  color: #6b7280;
-  font-size: 1rem;
 }
 
 /* ===============================
    ARTICLES
 ================================ */
-
 #portfolio article {
   display: grid;
-  grid-template-columns: 1fr 1.2fr;
-  gap: 3rem;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 4rem;
   margin-bottom: 5rem;
   align-items: start;
 }
 
-/* Article heading */
 #portfolio article > header h2 {
   grid-column: 1 / -1;
-  font-size: 1.5rem;
-  font-weight: 600;
+  font-size: 1.8rem;
+  font-weight: 700;
   margin-bottom: 1.5rem;
+  color: var(--black);
 }
 
 /* ===============================
    FIGURES / IMAGES
 ================================ */
-
 #portfolio figure {
   margin: 0;
 }
@@ -98,26 +129,27 @@ header nav a {
 
 #portfolio figure img {
   width: 100%;
-  height: auto;
-  border-radius: 18px;
+  height: 590px;
+  object-fit: cover;
+  border-radius: 22px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.12);
   display: block;
-  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.12);
 }
 
 #portfolio figcaption {
   margin-top: 0.75rem;
-  font-size: 0.85rem;
-  color: #6b7280;
+  font-size: 0.95rem;
+  color: var(--gray);
 }
 
 /* ===============================
    TEXT CONTENT
 ================================ */
-
 #portfolio article p {
-  font-size: 0.95rem;
-  color: #111827;
+  font-size: 1.05rem;
+  color: var(--black);
   margin-bottom: 1rem;
+  line-height: 1.6;
 }
 
 #portfolio article p strong {
@@ -127,7 +159,6 @@ header nav a {
 /* ===============================
    SECTION FOOTER
 ================================ */
-
 #portfolio > footer {
   text-align: center;
   margin-top: 3rem;
@@ -137,13 +168,12 @@ header nav a {
   max-width: 700px;
   margin: 0 auto;
   font-size: 0.95rem;
-  color: #6b7280;
+  color: var(--gray);
 }
 
 /* ===============================
    RESPONSIVE
 ================================ */
-
 @media (max-width: 900px) {
   #portfolio article {
     grid-template-columns: 1fr;
@@ -151,10 +181,29 @@ header nav a {
   }
 
   #portfolio > header h1 {
-    font-size: clamp(1.6rem, 6vw, 2rem);
+    font-size: clamp(1.8rem, 6vw, 2.4rem);
   }
 
-  header nav ul {
-    gap: 1.2rem;
+  #portfolio > header p {
+    font-size: clamp(0.9rem, 3vw, 1.05rem);
+  }
+
+  #portfolio article > header h2 {
+    font-size: clamp(1.4rem, 5vw, 1.8rem);
+  }
+
+  #portfolio figure img {
+    height: auto;
+    border-radius: 18px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+  }
+
+  #portfolio article p {
+    font-size: clamp(0.85rem, 3vw, 1rem);
+    line-height: 1.5;
+  }
+
+  nav ul {
+    gap: 1rem;
   }
 }
