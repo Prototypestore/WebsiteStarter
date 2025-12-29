@@ -1,0 +1,67 @@
+/* services container layout */
+#services-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-top: 24px;
+}
+
+/* card */
+#services-container > div {
+  width: 280px;
+  border: 1px solid #000;
+  background: #fff;
+  overflow: hidden;
+}
+
+/* top half: title + waves */
+#services-container > div > h3 {
+  margin: 0;
+  padding: 20px;
+  height: 140px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #000;
+
+  /* wave layers */
+  background:
+    /* thin black wavy strands */
+    url("data:image/svg+xml;utf8,
+    <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 280 140'>
+      <path d='M0 30 Q40 10 80 30 T160 30 T240 30'
+        fill='none' stroke='black' stroke-width='1'/>
+      <path d='M0 65 Q40 45 80 65 T160 65 T240 65'
+        fill='none' stroke='black' stroke-width='1'/>
+      <path d='M0 100 Q40 80 80 100 T160 100 T240 100'
+        fill='none' stroke='black' stroke-width='1'/>
+    </svg>") bottom center / cover no-repeat,
+
+    /* dark blue wave */
+    linear-gradient(
+      180deg,
+      #0b3c5d 0%,
+      #0b3c5d 45%,
+      transparent 45%
+    ),
+
+    /* light blue wave */
+    linear-gradient(
+      180deg,
+      #7fc3f2 0%,
+      #7fc3f2 70%,
+      transparent 70%
+    ),
+
+    /* white base */
+    #ffffff;
+}
+
+/* bottom half: price */
+#services-container > div > p {
+  margin: 0;
+  padding: 16px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  border-top: 1px solid #000;
+}
