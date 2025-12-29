@@ -181,32 +181,31 @@ nav a {
   color: #6b7280;
 }
 
-/* Full-width white bar for social + copyright */
+/* REMOVE this block to get rid of the white bar */
+/*
 .foot .social-bar {
-  background: #ffffff;       /* white full-width bar */
+  background: #ffffff;
   padding: 1rem 0;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 1rem;
   flex-wrap: wrap;
-  border-radius: 0;          /* full width, no rounding */
+  border-radius: 0;
   margin-bottom: 1.6rem;
 }
 
-/* Text inside white bar */
 .foot .social-bar p {
   font-size: 1.2rem;
   font-weight: 600;
-  color: #111827;           /* dark text */
+  color: #111827;
   margin: 0;
 }
 
-/* Social icons inside white bar */
 .foot .social-bar a img {
-  width: 26px;
+  width: 35px;
   height: 26px;
-  padding: 0;               /* no extra background */
+  padding: 0;
   background: none;
   opacity: 1;
   transition: 0.2s ease;
@@ -216,10 +215,10 @@ nav a {
   transform: scale(1.1);
 }
 
-/* Divider lines between icons if needed */
 .foot .social-bar a:not(:last-child) img {
   border-right: 1px solid rgba(0,0,0,0.1);
 }
+*/
 
 /* Contact block sizing */
 .add {
