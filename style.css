@@ -172,46 +172,35 @@ nav a {
 /* ===============================
    FOOTER / CONTACT (HYBRID)
 ================================ */
-
 .foot {
-  background: #f9fafb;       /* light footer base */
-  padding: 3rem 3%;
+  display: flex;
+  flex-direction: column;  /* stack rows vertically */
+  align-items: center;
+  gap: 0.5rem;            /* space between the two rows */
   text-align: center;
-  font-size: 0.9rem;
-  color: #6b7280;
 }
 
-/* Contact block sizing */
-.add {
-  max-width: 560px;
-  margin: 2rem auto 0;
+/* First row: "follow us" + Facebook */
+.foot p:first-of-type,
+.foot a[href*="facebook"] {
+  display: inline-block;
+  vertical-align: middle;
 }
 
-.add a {
-  color: #111827;
-  text-decoration: none;
-  font-weight: 500;
+.foot p:first-of-type {
+  margin-right: 0.5rem;  /* spacing between text and icon */
 }
 
-.add a:hover {
-  text-decoration: underline;
+/* Resize Facebook image */
+.foot a[href*="facebook"] img {
+  width: 36px;
+  height: 26px;
+  object-fit: cover;
 }
 
-.add a[href^="tel"] {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-/* Inline code tag */
-.code {
-  background: #ffffff;
-  color: var(--blue);
-  padding: 0.15rem 0.25rem;
-  border-radius: 6px;
-  font-weight: 700;
-  display: inline-flex;
-  align-items: center;
+/* Second row: copyright */
+.foot p:last-of-type {
+  margin-top: 0.5rem;  /* spacing from first row */
 }
 
 /* ===============================
