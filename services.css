@@ -25,75 +25,51 @@ body {
 }
 
 /* ===============================
-   HEADER / NAV
+   NAVIGATION
 ================================ */
-header {
-  background: #ffffff;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
-}
-
 nav {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 1.2rem 6%;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: center;
+  padding: 1.5rem 6%;
 }
 
 nav ul {
   display: flex;
   list-style: none;
-  gap: 2rem;
+  gap: 2.5rem;
 }
 
 nav a {
   text-decoration: none;
   color: var(--black);
   font-weight: 500;
-  font-size: 1rem;
-  padding: 0.5rem 0.75rem;
-  position: relative;
-  transition: color 0.3s ease;
-}
-
-nav a::after {
-  content: '';
-  position: absolute;
-  width: 0%;
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: var(--blue);
-  transition: width 0.3s ease;
-}
-
-nav a:hover::after {
-  width: 100%;
+  font-size: 0.95rem;
+  transition: color 0.2s ease;
 }
 
 nav a:hover {
   color: var(--blue);
 }
 
-/* Optional CTA button style */
 .nav-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: var(--blue);
+  border: 1px solid transparent;
+  border-radius: 35px;
+  width: 95px;
+  height: 45px;
   color: #fff;
-  border-radius: 30px;
-  padding: 0.65rem 1.5rem;
   font-weight: 600;
   font-size: 0.95rem;
   text-decoration: none;
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  transition: 0.2s ease;
 }
 
 .nav-contact:hover {
   transform: translateY(-2px);
-  box-shadow: 0 10px 25px rgba(30, 91, 255, 0.25);
+  box-shadow: 0 12px 30px rgba(30, 91, 255, 0.3);
 }
 
 /* ===============================
@@ -169,26 +145,14 @@ nav a:hover {
    RESPONSIVE
 ================================ */
 @media (max-width: 900px) {
-nav {
-    flex-direction: column;
+nav ul {
+    flex-direction: row;
     gap: 1rem;
-  }
-
-  nav ul {
-    flex-direction: column;
-    gap: 1rem;
-    width: 100%;
-    align-items: center;
+    justify-content: center;
   }
 
   nav a {
-    font-size: 0.95rem;
-  }
-
-  .nav-contact {
-    width: 100%;
-    text-align: center;
-    padding: 0.55rem 0;
+    font-size: clamp(0.85rem, 3vw, 0.95rem);
   }
    
   #services-container {
