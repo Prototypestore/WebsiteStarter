@@ -175,8 +175,8 @@ nav a {
 ================================ */
 
 .foot {
-  background: linear-gradient(180deg, #1bb0e6, #0fa4dc);
-  padding: 2.5rem 3%;
+  background: var(--blue);
+  padding: 3.5rem 3%;
   text-align: center;
 }
 
@@ -221,14 +221,8 @@ nav a {
   transform: none;
 }
 
-/* Keep your original add block intact if used elsewhere */
 .add {
-  background: var(--blue);
-  color: #fff;
-  padding: 2.2rem;
-  border-radius: 22px;
-  max-width: 460px;
-  margin: 0 auto 2.5rem;
+  max-width: 560px;
 }
 
 .add a {
