@@ -145,6 +145,16 @@ nav a:not(.nav-contact):hover {
    RESPONSIVE
 ================================ */
 @media (max-width: 900px) {
+.nav ul,
+.site-nav ul {
+  gap: 0.5rem; /* tighter spacing between links */
+}
+
+  .header-container,
+.site-header {
+  gap: 1rem; /* space between logo and nav */
+  }
+  
   .portfolio-item {
     grid-template-columns: 1fr;
     gap: 2rem;
