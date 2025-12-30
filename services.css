@@ -68,6 +68,11 @@ nav a:hover {
   transition: 0.2s ease;
 }
 
+.nav-contact:hover {
+  color: #fff;              /* stays white */
+  background: var(--blue);  /* stays blue */
+}
+
 /* ===============================
    SERVICES CONTAINER
 ================================ */
